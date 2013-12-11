@@ -1,0 +1,23 @@
+.hotkey_label {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #EEE;
+    text-align: center;
+    color: #000;
+    padding: 2px;
+    border: 1px solid #888;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    white-space: nowrap;
+    list-style-type: none;
+    font-size: 13px;
+    z-index: 999;
+}
+
+.letter_based_hotkey_label {
+}
+
+.number_based_hotkey_label {
+}

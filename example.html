@@ -1,0 +1,90 @@
+<html>
+<head>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vimiumize.css">
+    <style type="text/css">
+    div.pink-border {
+        border: 3px solid pink; 
+        margin: 5px; 
+        padding: 15px;
+    }
+    h1 {
+        margin: 40px 0 30px; 
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container col-md-6 col-md-offset-3">
+        <h1>Looking smug, Henry!</h1>
+    <div class="row vimiumize-number col-md-offset-2">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Still home</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-2 vimiumize-letter">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="https://github.com/tomfa/vimiumize">Repo</a></li>
+                <li><a href="https://github.com/tomfa/autofocus">Autofocus</a></li>
+                <li><a href="http://www.webutvikling.org">Me</a></li>
+                <li><a href="https://vimium.github.io">Vimium</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div class="pink-border">
+                <h3>What do I do?</h3>
+                <p>Go ahead and click esc to see the labels pop up. To 
+                    navigate to the link below the label, click the 
+                    corresponding key</p>
+                <h4>They're ugly and off position!</h4>
+                <p>Yes, indeed. Since webpages usually are different from 
+                    each other, you'll have to style them so they fit your 
+                    page. On this particular page, I guess they could go
+                    10px further down?</p>
+                <h4>How do I choose which links should be labeled?</h4>
+                You'll have to query them yourself and store the list as
+                letterlist and numberlist inside the vimiumize.js file.
+                By default the script queries &#60;a&#62;'s inside 
+                &#60;li&#62;'s inside  &#60;ul&#62;'s inside a div with
+                class vimiumize-letter or/and vimiumize-number, depending
+                on what sort of hotkey you want.
+                <h4>Can I get an example?</h4>
+                <pre>
+
+&#60;div class="vimiumize-letter"&#62;
+    &#60;ul&#62;
+        &#60;li&#62;&#60;a href=""&#62;link&#60;/a&#62;&#60;/li&#62;
+        &#60;li&#62;&#60;a href=""&#62;link&#60;/a&#62;&#60;/li&#62;
+        &#60;li&#62;&#60;a href=""&#62;link&#60;/a&#62;&#60;/li&#62;
+        &#60;li&#62;&#60;a href=""&#62;link&#60;/a&#62;&#60;/li&#62;
+        &#60;li&#62;&#60;a href=""&#62;link&#60;/a&#62;&#60;/li&#62;
+    &#60;/ul&#62;
+&#60;/div&#62;
+                </pre>
+                <p>The example above would work straight out of the box</p>
+                <h4>How does it decide which labels to use?</h4>
+                <p>For vimiumize-number, it goes from 1 to 9. Links after 
+                    that are simply ignored. For vimiumize-letters, it uses
+                    the letters in the link name. If the first letter it 
+                    attempts to use the second letter and so forth. If all 
+                    letters the link contains are used, it takes the first
+                    unused letter in the alphabet. So for the example above,
+                    the first link would've had the labels 'l', then 'i', 'n',
+                    'k', and 'a' for the last one.</p>
+                <h4>I found a bug or have a suggestion for improvement</h4>
+                <p>Great stuff. Post them <a href="https://github.com/tomfa/vimiumize/issues">here</a> or make a merge-request.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Remember to include jquery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+    <!-- And the vimiumize-script, of course -->
+    <script src="vimiumize.js"></script>
+</body>
+</html>
