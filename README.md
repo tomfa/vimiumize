@@ -18,8 +18,8 @@ Yes, indeed. Since webpages usually are different from each other, you'll have t
 
 ### How do I choose which links should be labeled?
 
-You'll have to query them yourself and store the list as letterlist and numberlist inside the vimiumize.js file. By default the script queries <a>'s inside <li>'s inside <ul>'s inside a div with class vimiumize-letter or/and vimiumize-number, depending on what sort of hotkey you want.
-Can I get an example?
+You'll have to query them yourself and store the list as letterlist and numberlist inside the vimiumize.js file. By default the script queries a's inside li's inside ul's inside a div with class vimiumize-letter or/and vimiumize-number, depending on what sort of hotkey you want.
+### Can I get an example?
 
 ```
 <div class="vimiumize-letter">
