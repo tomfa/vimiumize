@@ -2,10 +2,10 @@ $( document ).ready(function() {
     var triggering_key = 27; // ESC
 
     // query for the links that should receive letter-labeling
-    lettermenu = $('.vimiumize-letter').children('ul').children('li').children('a');
+    lettermenu = $('.vimiumize-letter').find('a');
 
     // query for the links that should receive number-labeling
-    numbermenu = $('.vimiumize-number').children('ul').children('li').children('a');
+    numbermenu = $('.vimiumize-number').find('a');
 
 
     var showing = false;
