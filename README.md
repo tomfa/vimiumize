@@ -4,7 +4,7 @@ vimiumize
 Make your webpage hotkey-friendly with this small JavaScript snippet
 
 ### What does it do
-It makes you able to click certain links on your webpage without having to click them, but by clicking ESC followed by a letter or number. You can see how it works on [tomfa.github.io/vimiumize/](the github pages) by clicking ESC.
+It makes you able to click certain links on your webpage without having to click them, but by clicking ESC followed by a letter or number. You can see how it works on [the github pages](tomfa.github.io/vimiumize/) by clicking ESC.
 
 ### Why would I want this?
 So you can navigate your webpage in a more comfortable way.
